@@ -1,0 +1,36 @@
+body {
+  min-height: 2000px;
+}
+.jumbotron {
+  margin: 0;
+  padding: 0;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: black;
+  transition: color 0.3s;
+}
+
+.contact:hover{
+  color: blue;
+}
+
+h3{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
