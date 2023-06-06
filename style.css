@@ -1,9 +1,15 @@
 body {
   min-height: 2000px;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 .jumbotron {
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 6rem;
   background-color: #e2edff;
 }
 
@@ -33,4 +39,8 @@ h3{
   text-align: center;
   padding-top: 100px;
   padding-bottom: 20px;
+}
+
+section{
+  padding-top: 6rem;
 }
