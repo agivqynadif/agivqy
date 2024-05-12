@@ -6,175 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>Agiv's Simple Page</title>
+
+    <link rel="icon" href="images/A.png" />
+    <title>Agivqy Nadif</title>
   </head>
   <body id="home">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Agivqy Nadif</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-4 ms-5" href="index.html"><strong>Agivqy.</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact </a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto mx-5">
+            <a class="nav-link fw-bold active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+          </div>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <div class="profile">
-        <img src="img/circle_me.png" alt="Agivqy Nadif" width="200" class="rounded-circle img-thumbnail mt-4" />
-        <h1 class="display-4">Agivqy Nadif</h1>
-        <p class="lead">Informatics Engineering Student</p>
+    <section id="home">
+      <div class="welcome container-sm border border-dark mt-5">
+        <span class="open-work badge font-monospace rounded-pill mt-2 text-end fw-normal">🟢 open to work</span>
+        <div class="content text-white text-start ms-3">
+          <p class="greeting fw-bold fs-3">
+            Hello, I'm Agiv <br />
+            Welcome to my profile!
+          </p>
+          <span class="role fw-light fs-6"
+            ><span><i class="bi bi-code-slash mx-2"></i>Web Developer</span></span
+          >
+        </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,0L40,32C80,64,160,128,240,165.3C320,203,400,213,480,192C560,171,640,117,720,106.7C800,96,880,128,960,122.7C1040,117,1120,75,1200,58.7C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Akhir  Jumbotron -->
 
-    <!-- About -->
-    <section id="about">
+    <!-- Tech Stack -->
+    <section id="tech-stack">
       <div class="container">
-        <div class="row text-center mb-3">
+        <p class="fw-bold fs-4 text-center">Tech Stack</p>
+      </div>
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
           <div class="col">
-            <h2>About Me</h2>
+            <div class="font-monospace fw-semibold rounded-pill p-3">
+              <span class="badge rounded-pill text-bg-secondary">Languages</span>
+            </div>
+            <ul class="list-group list-group-flush mx-auto" style="width: 300px">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">HTML</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">CSS</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">JavaScript</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">Java</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>
-              My name is Agivqy Nadif Santoso. You can call me Agiv. Currently, I live in Bogor, West Java. I'm interested with web development and I started learning about web since I studied in college. I have learning about HTML, CSS,
-              and JavaScript to develop my skills that can help me to build a good website.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              I took a part in Bangkit Academy 2023 as Cloud Computing cohort. Joining Bangkit program help me to improve my skills. Bangkit provide the cohort tech and soft skills material. As a Cloud Computing student, I learned a lot
-              about cloud using Google Cloud Platform.
-            </p>
+          <div class="col">
+            <div class="font-monospace fw-semibold rounded-pill p-3">
+              <span class="badge rounded-pill text-bg-secondary">Frameworks</span>
+            </div>
+            <ul class="list-group list-group-flush mx-auto" style="width: 300px">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">Bootstrap</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">Node.js</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">Express</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="mt-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMklBUVBX0yV0l3hIdTIxP-luLdoRYZAzvbA&usqp=CAU" alt="" class="tech-stack-img img-fluid" /></p>
+                  <p class="mt-auto ms-2 fw-medium">Next.js</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,160L40,133.3C80,107,160,53,240,74.7C320,96,400,192,480,197.3C560,203,640,117,720,74.7C800,32,880,32,960,53.3C1040,75,1120,117,1200,138.7C1280,160,1360,160,1400,160L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir About -->
+    <!-- Akhir Stack -->
 
-    <!-- Projects -->
-    <section id="projects">
+    <section id="Experience">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3 ml-auto">
-            <div class="Projects">
-              <h2>APIVI</h2>
-              <a href="https://youtu.be/c0ebh0aIZrw" target="_blank" rel="noopener">
-                <img src="img/apivi cover.png" class="card-img-top" alt="Projects 1" />
-              </a>
-              <div class="card-body">
-                <p class="card-text">APIVI is an Android application that implement machine learning architecture to detect normal and abnormal cells in cervix.</p>
-              </div>
+        <p class="fw-bold fs-4 text-center mb-4">Experience</p>
+        <div class="experience-list">
+          <div class="row justify-content-center mb-4">
+            <div class="col-2 text-end">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA8WYnJLQgpNzqza7SrS1i8i7ZpZaOj_DoFLTsTSr3zH6YYzU9m5shTPU05LZLoo9aMeo&usqp=CAU" class="experience-picture ms-2" alt="" />
+            </div>
+            <div class="col-6">
+              <p class="fs-6 fw-semibold mb-1">Project-Based Virtual Intern : Fullstack Developer Qwords x Rakamin Academy - Internship</p>
+              <p class="fs-6 fw-normal mb-1">Qwords Cloud Web Hosting Indonesia</p>
+              <small class="fw-light mb-1">Dec 2023 - Jan 2024 | 2 months</small>
             </div>
           </div>
-          <div class="col-md-4 mb-3 ml-auto">
-            <div class="Projects">
-              <h2>Jalan-jalan</h2>
-              <a href="https://agivqynadif.github.io/Jalan-Jalan/" target="_blank" rel="noopener">
-                <img src="img/jalan2.png" class="card-img-top" alt="Projects 2" />
-              </a>
-              <div class="card-body">
-                <p class="card-text">Jalan-jalan is a website that recommend destination for holiday. Not specific places, but it is like place that you can visit and spend your time during holiday.</p>
-              </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-2 text-end">
+              <img
+                src="https://media.licdn.com/dms/image/D560BAQGA9--7QFKfXQ/company-logo_200_200/0/1685935696982/rakaminacademy_logo?e=2147483647&v=beta&t=5Bt4zKwz1BFl6uSMBsHoOXKd-Axmrv6iy_IOdFGbjLI"
+                class="experience-picture ms-2"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <p class="fs-6 fw-semibold mb-1">Full Stack Web Development Student</p>
+              <p class="fs-6 fw-normal mb-1">Rakamin Academy</p>
+              <small class="fw-light mb-1">Aug 2023 - Dec 2023 | 5 months</small>
             </div>
           </div>
-          <div class="col-md-4 mb-3 ml-auto">
-            <div class="Projects">
-              <h2>Bookshelf API</h2>
-              <a href="https://github.com/agivqynadif/bookshelf_api" target="_blank" rel="noopener">
-                <img src="img/bookshelf.png" class="card-img-top" alt="Projects 3" />
-              </a>
-              <div class="card-body">
-                <p class="card-text">I created a bookshelf API using Hapi and node.js. This project was assigned by Dicoding to pass Back-End basic course.</p>
-              </div>
+          <div class="row justify-content-center">
+            <div class="col-2 text-end">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbzszf3i6L-AHmcDJwmkL5Bpa4rj-SH3hRnU85PumW_OJVvnyaEiWbMN5g5idWUndfpk&usqp=CAU" class="experience-picture ms-2" alt="" />
+            </div>
+            <div class="col-6">
+              <p class="fs-6 fw-semibold mb-1">Cloud Computing Cohort</p>
+              <p class="fs-6 fw-normal mb-1">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</p>
+              <small class="fw-light mb-1">Feb 2023 - Jul 2023 | 6 months</small>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L26.7,213.3C53.3,235,107,277,160,288C213.3,299,267,277,320,261.3C373.3,245,427,235,480,202.7C533.3,171,587,117,640,117.3C693.3,117,747,171,800,208C853.3,245,907,267,960,266.7C1013.3,267,1067,245,1120,224C1173.3,203,1227,181,1280,176C1333.3,171,1387,181,1413,186.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Projects -->
-
-    <!-- Social Account -->
-    <section id="contact">
-      <div>
-        <h3>Contact me and let's connect!</h3>
-        <a class="contact" href="https://www.linkedin.com/in/agivqynadifsantoso" target="_blank" rel="noopener">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#007bff"
-          fill-opacity="1"
-          d="M0,64L26.7,85.3C53.3,107,107,149,160,149.3C213.3,149,267,107,320,90.7C373.3,75,427,85,480,90.7C533.3,96,587,96,640,101.3C693.3,107,747,117,800,106.7C853.3,96,907,64,960,69.3C1013.3,75,1067,117,1120,128C1173.3,139,1227,117,1280,122.7C1333.3,128,1387,160,1413,176L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-      <p><i class="bi bi-c-circle"></i> Created by <a href="https://www.instagram.com/agivnadif/" class="text-white fw-bold">Agivqy Nadif</a></p>
+    <footer class="bg-white border-top text-dark text-center mt-5 py-3">
+      <small class="fw-light">©️ 2024 Agivqy.</small>
     </footer>
     <!-- Akhir Footer -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 </html>
